@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApplication">
-        <activity android:name=".Student"></activity>
+        <activity android:name=".Donation"></activity>
+        <activity android:name=".dona_with_special_needs" />
+        <activity android:name=".dona_Hospital" />
+        <activity android:name=".donation_Food" />
+        <activity android:name=".Water" />
+        <activity android:name=".dona_Midicine" />
+        <activity android:name=".dona_family" />
+        <activity android:name=".Student" />
         <activity android:name=".forgotPassword" />
         <activity android:name=".TabedActivity">
             <intent-filter>
@@ -22,7 +29,7 @@
         </activity>
         <activity android:name=".CreateAccount_Screen" />
         <activity android:name=".login_Screen" />
-        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".SplashScreen" />
         <activity android:name=".MainActivity" />
     </application>
 

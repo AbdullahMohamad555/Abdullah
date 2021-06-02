@@ -15,12 +15,12 @@ import java.util.ArrayList;
 public class adapterRecyclerViewDonation2_F extends RecyclerView.Adapter<adapterRecyclerViewDonation2_F.PersonViewHolder> {
 
     Context context;
-    ArrayList<Integer> image;
+    ArrayList<Data_donation2> data;
     OnRecyclerViewItemClickListener listener;
 
-    public adapterRecyclerViewDonation2_F(Context context, ArrayList image ,OnRecyclerViewItemClickListener listener) {
+    public adapterRecyclerViewDonation2_F(Context context, ArrayList data ,OnRecyclerViewItemClickListener listener) {
         this.context = context;
-        this.image = image;
+        this.data = data;
         this.listener = listener;
 
     }
@@ -35,17 +35,19 @@ public class adapterRecyclerViewDonation2_F extends RecyclerView.Adapter<adapter
 
     @Override
     public void onBindViewHolder(@NonNull PersonViewHolder holder, int position) {
-       Integer i = image.get(position);
-       holder.imageView.setImageResource(i);
+       Data_donation2 d = data.get(position);
+       holder.imageView.setImageResource(d.getImage());
+       holder.textView.setText(d.getName());
     }
 
     @Override
     public int getItemCount() {
-        return image.size();
+        return data.size();
     }
 
     class PersonViewHolder extends RecyclerView.ViewHolder {
 
+        TextView textView;
         ImageView imageView;
         int id;
 
@@ -53,8 +55,9 @@ public class adapterRecyclerViewDonation2_F extends RecyclerView.Adapter<adapter
             super(itemView);
 
             imageView = itemView.findViewById(R.id.custom_dona2_iv);
+            textView = itemView.findViewById(R.id.custom_dona2_tv);
 
-            imageView.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     listener.onItemClick(id);
