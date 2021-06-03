@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/donation_firstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -23,7 +23,7 @@
             android:hint="First name" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/donation_lastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -34,7 +34,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/donation_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -47,7 +47,7 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/donation_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -59,7 +59,7 @@
         android:hint="example@gmail.com"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/donation_country"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -74,7 +74,7 @@
         >
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/donation_rb_sadaqa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,7 +83,7 @@
             android:textSize="18dp" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/donation_rb_zakah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -111,7 +111,7 @@
         >
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/donation_rb_outGaza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -119,7 +119,7 @@
             android:textSize="18dp" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/donation_rb_insideGaza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -157,7 +157,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/donation_btn_dona_online"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -167,7 +167,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/donation_btn_dona_atHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -190,7 +190,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/donation_btn_following"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -199,6 +199,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="#2D2F31"
         android:text="تابع عملية التبرع"
         android:textSize="24dp" />
 </LinearLayout>
