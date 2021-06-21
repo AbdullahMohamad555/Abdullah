@@ -21,6 +21,7 @@ public class donation2Fragment extends Fragment {
     private static final String ARG_ID = "id";
     private static final String ARG_NAME = "name";
 
+
     private int id;
     private String name;
 
@@ -99,6 +100,8 @@ public class donation2Fragment extends Fragment {
                 }
             }
         });
+
+
 
         recyclerView.setAdapter(adapter);
         RecyclerView.LayoutManager lm = new GridLayoutManager(getContext(),2);

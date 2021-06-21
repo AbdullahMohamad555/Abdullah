@@ -43,10 +43,19 @@ public class donationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        ArrayList<Data_donation2> images = new ArrayList<>();
+        images.add(new Data_donation2(1,R.drawable.student,"كفالة تعليم طالب"));
+        images.add(new Data_donation2(2,R.drawable.water,"ساهم في توصيل المياه"));
+        images.add(new Data_donation2(3,R.drawable.family,"شارك في اسعاد عائلة"));
 
         View view= inflater.inflate(R.layout.fragment_donation, container, false);
-        recyclerView= view.findViewById(R.id.recycle_view);
-        adapterRecyclerViewDonation2_F adapter = new adapterRecyclerViewDonation2_F(getContext(),data);
+        recyclerView= view.findViewById(R.id.recycle_view_dona_1);
+        adapterRecyclerViewDonation_F adapter = new adapterRecyclerViewDonation_F(getContext(), data, new OnRecyclerViewItemClickListener() {
+            @Override
+            public void onItemClick(int id) {
+
+            }
+        });
         LinearLayoutManager lm = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(lm);
         recyclerView.setAdapter(adapter);
